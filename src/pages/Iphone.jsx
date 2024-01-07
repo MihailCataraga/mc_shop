@@ -76,91 +76,121 @@ export default function Iphone() {
             <Navbar />
             <main className='iphoneMain'>
                 <div className='filter'>
-                    <button onClick={handleResetFilters}>Reset Filters</button>
+                    <div className='resetFilter'>
+                        <button onClick={handleResetFilters}>Reset Filters</button>
+                    </div>
                     <h2>Color:</h2>
-                    <input
-                        type='checkbox'
-                        id='colorBlack'
-                        name="Black"
-                        onChange={(e) => handleFilterChange(e, 'colors')}
-                        checked={searchParams.getAll('colors').includes('Black')} />
-                    <label htmlFor='colorBlack'>Black</label>
-                    <input
-                        type='checkbox'
-                        id='colorRed'
-                        name="Red"
-                        onChange={(e) => handleFilterChange(e, 'colors')}
-                        checked={searchParams.getAll('colors').includes('Red')} />
-                    <label htmlFor='colorRed'>Red</label>
-                    <input
-                        type='checkbox'
-                        id='colorBlue'
-                        name="Blue"
-                        onChange={(e) => handleFilterChange(e, 'colors')}
-                        checked={searchParams.getAll('colors').includes('Blue')} />
-                    <label htmlFor='colorBlue'>Blue</label>
-                    <input
-                        type='checkbox'
-                        id='colorWhite'
-                        name="White"
-                        onChange={(e) => handleFilterChange(e, 'colors')}
-                        checked={searchParams.getAll('colors').includes('White')} />
-                    <label htmlFor='colorWhite'>White</label>
-                    <input
-                        type='checkbox'
-                        id='colorSilver'
-                        name="Silver"
-                        onChange={(e) => handleFilterChange(e, 'colors')}
-                        checked={searchParams.getAll('colors').includes('Silver')} />
-                    <label htmlFor='colorSilver'>Silver</label>
+                    <div className='options'>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='colorBlack'
+                                name="Black"
+                                onChange={(e) => handleFilterChange(e, 'colors')}
+                                checked={searchParams.getAll('colors').includes('Black')} />
+                            <label htmlFor='colorBlack'>Black</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='colorRed'
+                                name="Red"
+                                onChange={(e) => handleFilterChange(e, 'colors')}
+                                checked={searchParams.getAll('colors').includes('Red')} />
+                            <label htmlFor='colorRed'>Red</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='colorBlue'
+                                name="Blue"
+                                onChange={(e) => handleFilterChange(e, 'colors')}
+                                checked={searchParams.getAll('colors').includes('Blue')} />
+                            <label htmlFor='colorBlue'>Blue</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='colorWhite'
+                                name="White"
+                                onChange={(e) => handleFilterChange(e, 'colors')}
+                                checked={searchParams.getAll('colors').includes('White')} />
+                            <label htmlFor='colorWhite'>White</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='colorSilver'
+                                name="Silver"
+                                onChange={(e) => handleFilterChange(e, 'colors')}
+                                checked={searchParams.getAll('colors').includes('Silver')} />
+                            <label htmlFor='colorSilver'>Silver</label>
+                        </div>
+                    </div>
 
                     {/* Storege */}
                     <h2>Storage: </h2>
-                    <input
-                        type='checkbox'
-                        id='storage128GB'
-                        name="128GB"
-                        onChange={(e) => handleFilterChange(e, 'storage')}
-                        checked={searchParams.getAll('storage').includes('128GB')} />
-                    <label htmlFor='storage128GB'>128GB</label>
-                    <input
-                        type='checkbox'
-                        id='storage256GB'
-                        name="256GB"
-                        onChange={(e) => handleFilterChange(e, 'storage')}
-                        checked={searchParams.getAll('storage').includes('256GB')} />
-                    <label htmlFor='storage256GB'>256GB</label>
-                    <input
-                        type='checkbox'
-                        id='storage512GB'
-                        name="512GB"
-                        onChange={(e) => handleFilterChange(e, 'storage')}
-                        checked={searchParams.getAll('storage').includes('512GB')} />
-                    <label htmlFor='storage512GB'>512GB</label>
+                    <div className='options'>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='storage128GB'
+                                name="128GB"
+                                onChange={(e) => handleFilterChange(e, 'storage')}
+                                checked={searchParams.getAll('storage').includes('128GB')} />
+                            <label htmlFor='storage128GB'>128GB</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='storage256GB'
+                                name="256GB"
+                                onChange={(e) => handleFilterChange(e, 'storage')}
+                                checked={searchParams.getAll('storage').includes('256GB')} />
+                            <label htmlFor='storage256GB'>256GB</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='storage512GB'
+                                name="512GB"
+                                onChange={(e) => handleFilterChange(e, 'storage')}
+                                checked={searchParams.getAll('storage').includes('512GB')} />
+                            <label htmlFor='storage512GB'>512GB</label>
+                        </div>
+                    </div>
 
                     {/* Model */}
                     <h2>Model: </h2>
-                    <input
-                        type='checkbox'
-                        id='iphone15'
-                        name="iPhone 15"
-                        onChange={(e) => handleFilterChange(e, 'model')}
-                        checked={searchParams.getAll('model').includes('iPhone 15')} />
-                    <label htmlFor='iphone15'>iPhone 15</label>
-                    <input
-                        type='checkbox'
-                        id='iphone15pro'
-                        name="iPhone 15 Pro"
-                        onChange={(e) => handleFilterChange(e, 'model')}
-                        checked={searchParams.getAll('model').includes('iPhone 15 Pro')} />
-                    <label htmlFor='iphone15pro'>iPhone 15 Pro</label>
-                    <input
-                        type='checkbox'
-                        id='iphone15promax'
-                        name="iPhone 15 Pro Max"
-                        onChange={(e) => handleFilterChange(e, 'model')}
-                        checked={searchParams.getAll('model').includes('iPhone 15 Pro Max')} />
-                    <label htmlFor='iphone15promax'>iPhone 15 Pro Max</label>
+                    <div className='options'>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='iphone15'
+                                name="iPhone 15"
+                                onChange={(e) => handleFilterChange(e, 'model')}
+                                checked={searchParams.getAll('model').includes('iPhone 15')} />
+                            <label htmlFor='iphone15'>iPhone 15</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='iphone15pro'
+                                name="iPhone 15 Pro"
+                                onChange={(e) => handleFilterChange(e, 'model')}
+                                checked={searchParams.getAll('model').includes('iPhone 15 Pro')} />
+                            <label htmlFor='iphone15pro'>iPhone 15 Pro</label>
+                        </div>
+                        <div className='option'>
+                            <input
+                                type='checkbox'
+                                id='iphone15promax'
+                                name="iPhone 15 Pro Max"
+                                onChange={(e) => handleFilterChange(e, 'model')}
+                                checked={searchParams.getAll('model').includes('iPhone 15 Pro Max')} />
+                            <label htmlFor='iphone15promax'>iPhone 15 Pro Max</label>
+                        </div>
+                    </div>
                 </div>
                 <div className='products'>
                     {
