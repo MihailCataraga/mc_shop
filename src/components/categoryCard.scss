@@ -1,0 +1,25 @@
+@import '../style/variables.scss';
+
+.categoryCard{
+    background-color: $blackColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px $lightBlackColor;
+    width: 250px;
+    padding: 15px;
+    border-radius: 25px;
+    img{
+        width: 250px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+    h4{
+        font-size: 20px;
+        color: $whiteColor;
+        text-decoration: none;
+    }
+}
+.categoryCard:hover{
+    box-shadow: 0px 0px 12px 7px $lightBlackColor;
+}

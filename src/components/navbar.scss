@@ -1,0 +1,147 @@
+@import '../style/variables.scss';
+
+.navbar{
+    background-color: $blackColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        h1{
+            margin-left: 150px;
+            font-size: 44px;
+            color: $redColor;
+            display: flex;
+            align-items: center;
+            .iconLogo{
+                margin-left: 5px;
+            }
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 150px;
+        a{
+            display: flex;
+            align-items: center;
+            color: $whiteColor;
+            .icon {
+                margin: 5px;
+            }
+        }
+        a.active{
+            color: $redColor;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            color: $whiteColor;
+            cursor: pointer;
+            position: relative;
+            .icon{
+                margin: 5px;
+                color: $whiteColor;
+            }
+            .menuList{
+                position: absolute;
+                width: 200px;
+                background-color: $blackColor;
+                top: 49px;
+                right: -50px;
+                border-radius: 0 0 20px 20px;
+                nav{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    a{
+                        padding: 5px 0 5px 15%;
+                        width: 85%;
+                        font-size: 16px;
+                        align-items: center;
+                        .logo{
+                            margin-right: 5px;
+                        }
+                    }
+                    a:hover{
+                        color: $redColor;
+                        background-color: $lightBlackColor;
+                    }
+                    a:hover:last-child {
+                        border-radius: 0 0 20px 0;
+                    }
+                }
+            }
+            .menuListActive {
+                border-radius: 0 0 20px 0;
+            }
+            .subMenuList{
+                position: absolute;
+                width: 700px;
+                height: 120px;
+                background-color: $lightBlackColor;
+                right: 200px;
+                top: 0px;
+                border-radius: 0 0 0 20px;
+                .apple{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    .main{
+                        font-size: 18px;
+                        margin: 5px 0;
+                    }
+                    a:hover{
+                        color: $redColor;
+                    }
+                }
+                .samsung{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    .main{
+                        font-size: 18px;
+                        margin: 5px 0;
+                    }
+                    a:hover{
+                        color: $redColor;
+                    }
+                }
+                .gamers{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    .main{
+                        font-size: 18px;
+                        margin: 5px 0;
+                    }
+                    a:hover{
+                        color: $redColor;
+                    }
+                }
+                .audio{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    .main{
+                        font-size: 18px;
+                        margin: 5px 0;
+                    }
+                    a:hover{
+                        color: $redColor;
+                    }
+                }
+            }
+        }
+        .activeMenu {
+            color: $redColor;
+            .icon {
+                color: $redColor;
+            }
+        }
+
+    }
+}

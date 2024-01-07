@@ -1,0 +1,12 @@
+.apple{
+    .appleMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 50px;
+        a{
+            text-decoration: none;
+        }
+    }
+}

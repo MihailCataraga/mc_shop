@@ -1,0 +1,18 @@
+.iphonePage {
+    main{
+        display: flex;
+        .filter{
+            width: 500px;
+            height: 700px;
+            background-color: red;
+            margin: 25px;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            align-items: flex-start;
+            margin: 25px 0;
+        }
+    }
+}
