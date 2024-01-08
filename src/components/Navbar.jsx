@@ -40,9 +40,9 @@ const Navbar = () => {
                                 </div>
                                 <div className='macbook'>
                                     <NavLink to={'/apple/macbook'} className='main'>MacBook</NavLink>
-                                    <NavLink to={'/apple/macbook/macbook-air-15-2023'}>MacBook Air 15 2023</NavLink>
-                                    <NavLink to={'/apple/macbook/macbook-pro-16-2023'}>MacBook Pro 16 2023</NavLink>
-                                    <NavLink to={'/apple/macbook/macbook-pro-14-2023'}>MacBook Pro 14 2023</NavLink>
+                                    <NavLink to={'/apple/macbook/macbook-air-13'}>MacBook Air 13 2023</NavLink>
+                                    <NavLink to={'/apple/macbook/macbook-pro-16'}>MacBook Pro 16 2023</NavLink>
+                                    <NavLink to={'/apple/macbook/macbook-pro-14'}>MacBook Pro 14 2023</NavLink>
                                 </div>
                                 <div className='watch'>
                                     <NavLink to={'/apple/watch'} className='main'>Watch</NavLink>

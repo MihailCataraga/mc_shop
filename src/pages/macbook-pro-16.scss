@@ -1,0 +1,6 @@
+@import '../style/variables.scss';
+
+.macbookPro16 {
+    background-color: $bgColor;
+    @import '../pages/subcategory.scss';
+}

@@ -561,7 +561,7 @@ export const products = {
                     weight: "Approximately 3.5 pounds (1.6 kg)",
                 }
             ],
-            macbookAir15: [
+            macbookAir13: [
                 {
                     id: 1,
                     name: "MacBook Air 13",

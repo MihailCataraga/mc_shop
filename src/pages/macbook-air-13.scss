@@ -1,0 +1,6 @@
+@import '../style/variables.scss';
+
+.macbookAir13 {
+    background-color: $bgColor;
+    @import '../pages/subcategory.scss';
+}
