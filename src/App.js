@@ -20,6 +20,8 @@ import ItemMacbook from "./pages/ItemMacbook";
 import MacbookPro16 from "./pages/Macbook-Pro-16";
 import MacbookPro14 from "./pages/Macbook-Pro-14";
 import MacbookAir13 from "./pages/Macbook-air-13";
+import Watch from "./pages/Watch";
+import ItemWatch from "./pages/ItemWatch";
 
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
           <Route path="/apple/macbook/macbook-pro-14" element={<MacbookPro14 />} />
           <Route path="/apple/macbook/macbook-air-13" element={<MacbookAir13 />} />
           <Route path="/apple/macbook/:item" element={<ItemMacbook />} />
+          <Route path="/apple/watch" element={<Watch />} />
+          <Route path="/apple/watch/:item" element={<ItemWatch />} />
           <Route path="/samsung" element={<Samsung />} />
           <Route path="/gamers" element={<Gamers />} />
           <Route path="/audio" element={<Audio />} />

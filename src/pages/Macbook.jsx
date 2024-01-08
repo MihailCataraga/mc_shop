@@ -63,7 +63,7 @@ export default function Macbook() {
 
         return hasSelectedColor && hasSelectedStorage && hasSelectedModel;
     });
-    const filteredProductsMacbookAir15 = products.apple.macbook.macbookAir15.filter(product => {
+    const filteredProductsMacbookAir13 = products.apple.macbook.macbookAir13.filter(product => {
         const hasSelectedColor = colors.length === 0 || colors.includes(product.color);
         const hasSelectedStorage = storage.length === 0 || storage.includes(product.storage);
         const hasSelectedModel = model.length === 0 || model.includes(product.name);
@@ -198,7 +198,7 @@ export default function Macbook() {
                         })
                     }
                     {
-                        filteredProductsMacbookAir15.map((product) => {
+                        filteredProductsMacbookAir13.map((product) => {
                             return (
                                 <Link key={product.id} to={`/apple/macbook/${product.name + '+' + product.color + '+' + product.storage}`} onClick={() => dispatch(setItemData(product))}>
                                     <div>

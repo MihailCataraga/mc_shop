@@ -1,0 +1,6 @@
+@import '../style/variables.scss';
+
+.watchPage {
+    background-color: $bgColor;
+    @import '../pages/subcategory.scss';
+}

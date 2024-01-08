@@ -5,7 +5,8 @@ import Navbar from '../components/Navbar';
 import './item.scss'
 import { FaCartPlus } from 'react-icons/fa';
 
-export default function ItemMacbook() {
+export default function ItemWatch
+() {
     // Take product from Redux store
     const dispatch = useDispatch();
     const product = useSelector((state) => state.itemData);
@@ -31,7 +32,7 @@ export default function ItemMacbook() {
                     <div className='right'>
                         <div className='miniSpecifications'>
                             <p>Color: {product.color}</p>
-                            <p>Storage: {product.storage}</p>
+                            <p>Size: {product.size}</p>
                             <p>Display Size: {product.display.size}</p>
                             <p>Battery Capacity: {product.battery.capacity}</p>
                         </div>
@@ -45,26 +46,24 @@ export default function ItemMacbook() {
                     <h2>Specification: </h2>
                     <div>
                         <p>Color: {product.color}</p>
-                        <p>Storage: {product.storage}</p>
                         <p>Display Size: {product.display.size}</p>
+                        <p>Display Type: {product.display.type}</p>
                         <p>Display Resolution: {product.display.resolution}</p>
-                        <p>Display Panel Type: {product.display.panel_type}</p>
-                        <p>Display Refersh Rate: {product.display.refresh_rate}</p>
-                        <p>Procesor Chipset: {product.processor.chipset}</p>
-                        <p>Procesor Cores: {product.processor.cores}</p>
-                        <p>Procesor GPU: {product.processor.gpu}</p>
-                        <p>Memory Type: {product.memory.type}</p>
-                        <p>Memory Capacity: {product.memory.capacity}</p>
-                        <p>Storage Type: {product.storagetype.type}</p>
-                        <p>Storage Capacity: {product.storagetype.capacity}</p>
-                        <p>USB C: {product.ports.usb_c}</p>
-                        <p>Thunderbolt: {product.ports.thunderbolt}</p>
-                        <p>HDMI: {product.ports.hdmi}</p>
-                        <p>Headphone Jack: {product.ports.headphone_jack}</p>
+                        <p>Display Touchscreen: {product.display.touchscreen}</p>
+                        <p>Sensors: {product.features.sensors.map((i) => i + ', ')}</p>
+                        <p>Connectivity: {product.features.connectivity.map((i) => i + ', ')}</p>
+                        <p>Waterproof: {product.features.waterproof}</p>
+                        <p>Cellular: {product.features.cellular}</p>
                         <p>Battery Capacity: {product.battery.capacity}</p>
-                        <p>Battery Life: {product.battery.battery_life}</p>
-                        <p>Operating Sistem: {product.operating_system}</p>
-                        <p>Weight: {product.weight}</p>
+                        <p>Battery Charging: {product.battery.charging}</p>
+                        <p>Battery Life: {product.battery.batteryLife}</p>
+                        <p>Compatible With: {product.compatibility.compatibleWith.map((i) => i + ', ')}</p>
+                        <p>Companion App: {product.compatibility.companionApp}</p>
+                        <p>Materials: {product.design.materials.map((i) => i + ', ')}</p>
+                        <p>Colors Available: {product.design.colorsAvailable.map((i) => i + ', ')}</p>
+                        <p>Straps: {product.design.straps.map((i) => i + ', ')}</p>
+                        <p>Weight: {product.design.weight}</p>
+                        <p>Thickness: {product.design.thickness}</p>
                     </div>
                 </div>
             </main>
