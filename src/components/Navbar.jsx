@@ -36,7 +36,7 @@ const Navbar = () => {
                                     <NavLink to={'/apple/iphone'} className='main'>iPhone</NavLink>
                                     <NavLink to={'/apple/iphone/iphone-15'}>iPhone 15</NavLink>
                                     <NavLink to={'/apple/iphone/iphone-15-pro'}>iPhone 15 Pro</NavLink>
-                                    <NavLink to={'/apple/iphone/ipone-15-pro-max'}>iPhone 15 Pro Max</NavLink>
+                                    <NavLink to={'/apple/iphone/iphone-15-pro-max'}>iPhone 15 Pro Max</NavLink>
                                 </div>
                                 <div className='macbook'>
                                     <NavLink to={'/apple/macbook'} className='main'>MacBook</NavLink>
