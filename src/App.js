@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Promotions from "./pages/Promotions";
 import Account from "./pages/Account";
@@ -27,7 +27,7 @@ import ItemWatch from "./pages/ItemWatch";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/promotions" element={<Promotions />} />
@@ -52,7 +52,7 @@ function App() {
           <Route path="/gamers" element={<Gamers />} />
           <Route path="/audio" element={<Audio />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
